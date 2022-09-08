@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.ModifyUserViewModel" />
+
+        <variable
+            name="click"
+            type="com.my.path.ui.fragment.min.ModifyUserFragment.ProxyClick" />
+
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_title"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:onClick="@{()->click.penName()}"
+                android:paddingBottom="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/bimingasdx"
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@={viewmodel.penName}"
+                    android:layout_toLeftOf="@+id/image_you213"/>
+
+                <ImageView
+                    android:id="@+id/image_you213"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_base_user_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_touxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.userHead()}"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#212121"
+                    android:text="@string/user_base_toux"/>
+
+                <ImageView
+                    android:id="@+id/image_tou"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toLeftOf="@+id/image_you" />
+                <ImageView
+                    android:id="@+id/image_you"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_base_user_you"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_nick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="@{()->click.nick()}"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_base_nick"
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@={viewmodel.userName}"
+                    android:layout_toLeftOf="@+id/image_you1"/>
+
+                <ImageView
+                    android:id="@+id/image_you1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_base_user_you" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_xingbie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                android:onClick="@{()->click.sex()}">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/user_base_xingb"
+                    android:textColor="#212121"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_xingbie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@={viewmodel.sex}"
+                    android:layout_toLeftOf="@+id/image_you3"/>
+
+                <ImageView
+                    android:id="@+id/image_you3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_base_user_you" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textColor="#212121"
+                android:text="@string/user_base_zhangh"/>
+
+            <TextView
+                android:id="@+id/tv_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="@={viewmodel.userId}"
+                android:textColor="#6C6C6C"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

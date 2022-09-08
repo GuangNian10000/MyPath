@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="proxyClick"
+            type="com.my.path.ui.fragment.login.ForgetPwdFragment.ProxyClick" />
+
+        <variable
+            name="codeViewModel"
+            type="com.my.path.viewmodel.state.CodeViewModel" />
+
+        <variable
+            name="phoneViewModel"
+            type="com.my.path.viewmodel.state.PhoneViewModel" />
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.RegisteredViewModel" />
+
+        <variable
+            name="userServiceViewModel"
+            type="com.my.path.viewmodel.state.login.UserServiceAgreementViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <include
+            android:id="@+id/include7"
+            layout="@layout/include_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/include7">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <include
+                        android:id="@+id/view_text_input_registered"
+                        layout="@layout/view_text_input_registered"
+                        app:phoneViewModel="@{phoneViewModel}" />
+
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/view_text_input_pwd"
+                    layout="@layout/view_text_input_pwd"
+                    app:codeViewModel="@{codeViewModel}"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="34dp"
+                    android:layout_marginEnd="18dp"
+                    android:background="@drawable/bg_login_bt_on"
+                    android:gravity="center"
+                    android:text="@string/chongzhibingdenglsad"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    app:noRepeatClick="@{()->proxyClick.registered()}" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:text="@string/wangjimimadawsd"
+                        android:textColor="#9C9C9C"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:text="@string/yanzmasddenglasd"
+                        android:textColor="#9C9C9C"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <include
+                android:id="@+id/view_bottom_agreement"
+                layout="@layout/view_bottom_agreement"
+                app:userServiceViewModel="@{userServiceViewModel}" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

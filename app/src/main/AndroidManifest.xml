@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.my.path">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" /><!--震动 消息提醒 功能按钮反馈-->
+
+    <!--阿里登录-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 检查wifi网络状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 切换网络通道 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 开关Wi-Fi状态，解决国内机型移动网络权限问题需要 -->
+
+    <queries>
+        <package android:name="com.sdt.dlxk" />
+        <intent>
+            <action android:name="com.sdt.dlxk.ui.activity.MainActivity" />
+        </intent>
+
+    </queries>
+    <application
+        android:name="com.my.path.app.App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:resizeableActivity="true"
+        tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity"
+        tools:targetApi="31">
+        <!--阿里云一键登录-->
+        <!--联通电信授权页-->
+        <!--如果不需要使用窗口模式，不要使用authsdk_activity_dialog主题，会出现异常动画-->
+        <!--如果需要使用authsdk_activity_dialog主题，则screenOrientation一定不能指定明确的方向，
+               比如portrait、sensorPortrait，在8.0的系统上不允许窗口模式指定orientation，会发生crash，需要指定为behind，
+               然后在授权页的前一个页面指定具体的orientation-->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/authsdk_activity_dialog"
+            android:launchMode="singleTop" />
+        <!--协议页面webview-->
+        <activity
+            android:name="com.mobile.auth.gatewayauth.activity.AuthWebVeiwActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="behind" />
+        <!--移动授权页-->
+        <activity
+            android:name="com.cmic.sso.sdk.activity.LoginAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop" />
+        <!--阿里云一键登录-->
+
+        <!--状态栏适配-->
+        <!--适配华为（huawei）刘海屏-->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true"/>
+        <!--适配小米（xiaomi）刘海屏-->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+
+        <!-- firebase -->
+            <meta-data
+                android:name="firebase_performance_logcat_enabled"
+                android:exported="true"
+                android:value="true" />
+            <provider
+                android:authorities="1:834165048170:android:1258d2ead9159c7b775b13.firebaseperfprovider"
+                android:exported="false"
+                android:initOrder="101"
+                android:name="com.google.firebase.perf.provider.FirebasePerfProvider"
+                tools:node="remove"/>
+
+            <!--禁用FirebaseApp初始化        -->
+            <provider
+                android:name="com.google.firebase.provider.FirebaseInitProvider"
+                android:authorities="1:834165048170:android:1258d2ead9159c7b775b13.firebaseinitprovider"
+                android:exported="false"
+                tools:node="remove"/>
+
+        <!-- Arms 配置 -->
+            <meta-data
+                android:name="design_width_in_dp"
+                android:value="360" />
+
+            <meta-data
+                android:name="design_height_in_dp"
+                android:value="760" />
+
+        <!--剪切-->
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:exported="true"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.my.path.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+            <!--  -->
+        </provider>
+
+        <activity
+            android:name="com.my.path.ui.MainActivity"
+            android:exported="true"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.my.path.ui.activity.InLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentTheme"/>
+    </application>
+
+</manifest>

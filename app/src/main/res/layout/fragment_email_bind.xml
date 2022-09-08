@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.BindEmailViewModel" />
+
+        <variable
+            name="click"
+            type="com.my.path.ui.fragment.setup.BindEmailFragment.ProxyClick" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/includeToolbar"
+                layout="@layout/include_title"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:text="@string/bangyouasdx"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="26dp"
+                >
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_reg_phone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:textCursorDrawable="@drawable/base_color_cursor"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginStart="16dp"
+                    android:hint="@string/youxiangxc"
+                    android:text="@={viewmodel.email}"
+                    android:textColor="#333333"
+                    android:textColorHint="#CBCED9"
+                    android:textSize="16sp"
+                    app:addTextChangedListener="@{viewmodel.simpleTextWatcherEmail1}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_login_pwd"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:textCursorDrawable="@drawable/base_color_cursor"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@null"
+                    android:hint="@string/shurumimasd"
+                    app:addTextChangedListener="@{viewmodel.simpleTextWatcherEmail2}"
+                    android:text="@={viewmodel.emailPassword}"
+                    android:textColor="#333333"
+                    android:textColorHint="#CBCED9"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <CheckBox
+                    android:id="@+id/imageView8"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:button="@drawable/keyvisibily_selector"
+                    android:checked="false"
+                    android:visibility="@{viewmodel.passwordVisible}"
+                    bind:checkChange="@{click.onCheckedChangeListener}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="26dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_re_pwd"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:textCursorDrawable="@drawable/base_color_cursor"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_marginStart="16dp"
+                    android:hint="@string/youxiangyanmdasd"
+                    android:textColor="#333333"
+                    android:textColorHint="#CBCED9"
+                    android:textSize="16sp"
+                    app:addTextChangedListener="@{viewmodel.simpleTextWatcherEmail3}"
+                    android:text="@={viewmodel.emailCode}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView3"
+                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/huoquyanzmsa"
+                    android:textSize="16sp"
+                    android:textColor="#677DF7"
+                    android:onClick="@{()-> click.sendCode()}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="28dp"
+                android:layout_marginRight="28dp"
+                android:layout_marginTop="10dp"
+                android:background="#F5F5F5"/>
+
+            <RelativeLayout
+                android:layout_marginEnd="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tvYyCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#9C9C9C"
+                    android:onClick="@{()-> click.registerSendvoice()}"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_intent_res_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:onClick="@{()->click.goPhone()}"
+                    android:text="@string/shoujiashduz"
+                    android:visibility="gone"
+                    android:textColor="#9C9C9C"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="@string/liJIbangdasd"
+                bind:noRepeatClick="@{()-> click.goPhone()}"
+                android:background="@drawable/bg_login_bt_on"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>
+
+
+
+
+

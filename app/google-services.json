@@ -1,0 +1,101 @@
+{
+  "project_info": {
+    "project_number": "834165048170",
+    "project_id": "dlxk-ios",
+    "storage_bucket": "dlxk-ios.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834165048170:android:1258d2ead9159c7b775b13",
+        "android_client_info": {
+          "package_name": "com.dlxk.zs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834165048170-jpcsdvqtn9cdv6fkj4tdh52j2nqarlct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dlxk.zs",
+            "certificate_hash": "1f80493c5fd8d3d563903683aeb4f5b4e2f9122a"
+          }
+        },
+        {
+          "client_id": "834165048170-4qgg5juko5s5pdrlvhqa7bf9ibo977vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD03Mzr8UHTJtjrB4N6nOCweLlEzrHXL5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834165048170-4qgg5juko5s5pdrlvhqa7bf9ibo977vn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834165048170-ojddj7bdiphf6c30cr4pd8h1bmm1hnlo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dlxk.app",
+                "app_store_id": "1519735456"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834165048170:android:c085648e15337307775b13",
+        "android_client_info": {
+          "package_name": "com.sdt.dlxk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834165048170-opae8f2gjjf6380e239ou9c75qt48ha5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sdt.dlxk",
+            "certificate_hash": "d38f4ff6ea72943d416f63bbb73fbdc4dbdf053e"
+          }
+        },
+        {
+          "client_id": "834165048170-4qgg5juko5s5pdrlvhqa7bf9ibo977vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD03Mzr8UHTJtjrB4N6nOCweLlEzrHXL5c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834165048170-4qgg5juko5s5pdrlvhqa7bf9ibo977vn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "834165048170-ojddj7bdiphf6c30cr4pd8h1bmm1hnlo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.dlxk.app",
+                "app_store_id": "1519735456"
+              }
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-2684829581045710~9390480377"
+    }
+  ],
+  "configuration_version": "1"
+}

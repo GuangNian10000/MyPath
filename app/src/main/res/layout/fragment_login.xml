@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="proxyClick"
+            type="com.my.path.ui.fragment.login.LoginFragment.ProxyClick" />
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.LoginViewModel" />
+
+        <variable
+            name="userServiceViewModel"
+            type="com.my.path.viewmodel.state.login.UserServiceAgreementViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp">
+
+                <include layout="@layout/view_app_name_log" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp">
+
+                <include
+                    layout="@layout/view_text_input_message"
+                    app:viewmodel="@{viewmodel}"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="34dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                app:showPwd="@{viewmodel.bgLoginBut}"
+                app:noRepeatClick="@{()->proxyClick.login()}"
+                android:gravity="center"
+                android:text="@string/dengbudasesad"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="18dp"
+                android:onClick="@{()->proxyClick.inRegistered()}"
+                android:background="@drawable/bg_login_re_bg"
+                android:gravity="center"
+                android:text="@string/zhucesahdiawsed"
+                android:textSize="14sp"
+                android:textColor="@color/base_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:text="@string/wangjimimadawsd"
+                    android:onClick="@{()->proxyClick.inForgetPwd()}"
+                    android:textColor="#9C9C9C"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp"
+                    android:text="@string/yanzmasddenglasd"
+                    android:onClick="@{()->proxyClick.inLoginCode()}"
+                    android:textColor="#9C9C9C"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent">
+            <include
+                android:id="@+id/view_bottom_agreement"
+                layout="@layout/view_bottom_agreement"
+                app:userServiceViewModel="@{userServiceViewModel}"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

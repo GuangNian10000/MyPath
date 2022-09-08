@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_1"
+        android:checked="true"
+        android:icon="@drawable/bg_page_table_xz"
+        android:title="写作" />
+
+    <item
+        android:id="@+id/menu_2"
+        android:icon="@drawable/bg_page_table_xxj"
+        android:title="消息"
+        />
+
+    <item
+        android:id="@+id/menu_3"
+        android:icon="@drawable/bg_page_table_sj"
+        android:title="数据" />
+
+    <item
+        android:id="@+id/menu_4"
+        android:icon="@drawable/bg_page_table_me"
+        android:title="我的" />
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="userServiceViewModel"
+            type="com.my.path.viewmodel.state.login.UserServiceAgreementViewModel" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llAgreement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_marginEnd="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:button="@drawable/bg_book_xuanzhong_bg"
+            android:checked="@={userServiceViewModel.isChecked()}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="勾选即代表同意读乐星空的"
+            android:textColor="#9C9C9C"
+            android:textSize="11sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《用户协议》"
+            android:textColor="#FF544C"
+            android:textSize="11sp"
+            app:onClickServiceAgreement="@{`FWUXIY`}"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="和"
+            android:textColor="#9C9C9C"
+            android:textSize="11sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《隐私政策》"
+            android:textColor="#FF544C"
+            android:textSize="11sp"
+            app:onClickServiceAgreement="@{`YINSI`}"
+            />
+    </LinearLayout>
+</layout>
+

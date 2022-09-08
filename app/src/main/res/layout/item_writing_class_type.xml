@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="m"
+            type="com.my.path.data.model.bean.Yc" />
+    </data>
+
+    <FrameLayout
+        android:id="@+id/itemFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="42dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="14sp"
+            app:showHeadClassType="@{m.selected}"
+            android:text="@{m.name}"/>
+    </FrameLayout>
+</layout>
+

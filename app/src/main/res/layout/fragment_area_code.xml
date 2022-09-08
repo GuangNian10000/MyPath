@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.AreaCodeViewModel" />
+
+        <variable
+            name="click"
+            type="com.my.path.ui.fragment.login.AreaCodeFragment.ProxyClick" />
+
+    </data>
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.basic.AreaCodeActivity">
+        <include
+            android:id="@+id/include"
+            layout="@layout/include_title"/>
+
+        <ListView
+            android:id="@+id/city_list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:layout_gravity="center"
+            android:layout_toLeftOf="@+id/quick"
+            android:background="@color/white"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:scrollbars="none" />
+
+        <com.my.path.app.weight.customview.QuickLocationBar
+            android:id="@+id/quick"
+            android:visibility="gone"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="7dp" />
+    </RelativeLayout>
+</layout>
+
+
+
+
+
+

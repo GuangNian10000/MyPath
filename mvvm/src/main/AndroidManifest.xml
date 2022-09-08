@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.guangnian.mvvm">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application>
+        <provider
+            android:authorities="${applicationId}.KtxInstaller"
+            android:name="me.guangnian.mvvm.base.Ktx"
+            android:exported="true"/>
+    </application>
+</manifest>

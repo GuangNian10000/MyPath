@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="proxyClick"
+            type="com.my.path.ui.fragment.writing.WritingAddFragment.ProxyClick" />
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.writing.WritingChangeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/conLx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <com.my.path.app.weight.textview.MediumBoldTextView
+                android:id="@+id/mediumBoldTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leixfensdijase"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.my.path.app.weight.textview.NoClickEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                style="@style/baseNoOnClickEditText"
+                android:text="@={viewmodel.novel.obYclx}"
+                android:hint="@string/qingxuiandhuase"
+                android:textColor="#AAAAAA"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/mediumBoldTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_jiansdughhase"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:id="@+id/conXx"
+            android:paddingBottom="22dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <com.my.path.app.weight.textview.MediumBoldTextView
+                android:id="@+id/mediumBoldTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xingxiangshidjiase"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.my.path.app.weight.textview.NoClickEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                style="@style/baseNoOnClickEditText"
+                android:text="@={viewmodel.novel.obXXsj}"
+                android:hint="@string/qingshurhuaxdhjsae"
+                android:textColor="#AAAAAA"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                app:layout_constraintStart_toEndOf="@+id/mediumBoldTextView2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_jiansdughhase"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:id="@+id/conSd"
+            android:paddingBottom="22dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <com.my.path.app.weight.textview.MediumBoldTextView
+                android:id="@+id/mediumBoldTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shidaifenggeasdase"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.my.path.app.weight.textview.NoClickEditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                style="@style/baseNoOnClickEditText"
+                android:text="@={viewmodel.novel.obSdfg}"
+                android:hint="@string/xuanzhgjdghjased"
+                android:textColor="#AAAAAA"
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                app:layout_constraintStart_toEndOf="@+id/mediumBoldTextView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/ic_jiansdughhase"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>
+

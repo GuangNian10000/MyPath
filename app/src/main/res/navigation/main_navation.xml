@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navation"
+    app:startDestination="@id/mainfragment">
+
+
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.my.path.ui.fragment.me.CalendarFragment"
+        android:label="CalendarFragment"/>
+
+    <fragment
+        android:id="@+id/mainfragment"
+        android:name="com.my.path.ui.fragment.main.MainFragment"
+        android:label="HomeFragment"/>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.my.path.ui.fragment.login.LoginFragment"
+        android:label="LoginFragment"/>
+
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.my.path.ui.fragment.web.WebFragment"
+        android:label="WebFragment"/>
+
+    <fragment
+        android:id="@+id/writingAddFragment"
+        android:name="com.my.path.ui.fragment.writing.WritingAddFragment"
+        android:label="WritingAddFragment"/>
+
+    <fragment
+        android:id="@+id/chapterListFragment"
+        android:name="com.my.path.ui.fragment.chapter.ChapterListFragment"
+        android:label="ChapterListFragment"/>
+
+    <fragment
+        android:id="@+id/chapterAddFragment"
+        android:name="com.my.path.ui.fragment.chapter.ChapterAddFragment"
+        android:label="ChapterAddFragment"/>
+
+    <fragment
+        android:id="@+id/ticketListFragment"
+        android:name="com.my.path.ui.fragment.message.TicketListFragment"
+        android:label="TicketListFragment"/>
+
+    <fragment
+        android:id="@+id/giftListFragment"
+        android:name="com.my.path.ui.fragment.message.GiftListFragment"
+        android:label="GiftListFragment"/>
+
+    <fragment
+        android:id="@+id/commentListFragment"
+        android:name="com.my.path.ui.fragment.message.CommentListFragment"
+        android:label="CommentListFragment"/>
+
+    <fragment
+        android:id="@+id/commentDetailsFragment"
+        android:name="com.my.path.ui.fragment.message.CommentDetailsFragment"
+        android:label="CommentDetailsFragment"/>
+
+    <fragment
+        android:id="@+id/redListFragment"
+        android:name="com.my.path.ui.fragment.message.RedListFragment"
+        android:label="RedListFragment"/>
+
+    <fragment
+        android:id="@+id/writingChangesFragment"
+        android:name="com.my.path.ui.fragment.writing.WritingChangesFragment"
+        android:label="WritingChangesFragment"/>
+
+
+    <fragment
+        android:id="@+id/dataSituationFragment"
+        android:name="com.my.path.ui.fragment.data.DataSituationFragment"
+        android:label="DataSituationFragment"/>
+
+    <fragment
+        android:id="@+id/dataEarningsFragment"
+        android:name="com.my.path.ui.fragment.data.DataEarningsFragment"
+        android:label="DataEarningsFragment"/>
+    <fragment
+        android:id="@+id/dataPaymentFragment"
+        android:name="com.my.path.ui.fragment.data.DataPaymentFragment"
+        android:label="DataPaymentFragment"/>
+
+    <fragment
+        android:id="@+id/accountSecurityFragment"
+        android:name="com.my.path.ui.fragment.setup.AccountSecurityFragment"
+        android:label="AccountSecurityFragment"/>
+
+
+
+    <fragment
+        android:id="@+id/bindEmailFragment"
+        android:name="com.my.path.ui.fragment.setup.BindEmailFragment"
+        android:label="BindEmailFragment"/>
+
+    <fragment
+        android:id="@+id/bindPhoneFragment"
+        android:name="com.my.path.ui.fragment.setup.BindPhoneFragment"
+        android:label="BindPhoneFragment"/>
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.my.path.ui.fragment.setup.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"/>
+
+    <fragment
+        android:id="@+id/setRetrievePasswordFragment"
+        android:name="com.my.path.ui.fragment.setup.SetRetrievePasswordFragment"
+        android:label="SetRetrievePasswordFragment"/>
+    <fragment
+        android:id="@+id/areaCodeFragment"
+        android:name="com.my.path.ui.fragment.login.AreaCodeFragment"
+        android:label="AreaCodeFragment"/>
+
+
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.my.path.ui.fragment.min.AboutFragment"
+        android:label="AboutFragment"/>
+    <fragment
+        android:id="@+id/feedBackFragment"
+        android:name="com.my.path.ui.fragment.min.FeedBackFragment"
+        android:label="FeedBackFragment"/>
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.my.path.ui.fragment.min.LanguageFragment"
+        android:label="LanguageFragment"/>
+    <fragment
+        android:id="@+id/modifyUserFragment"
+        android:name="com.my.path.ui.fragment.min.ModifyUserFragment"
+        android:label="ModifyUserFragment"/>
+    <fragment
+        android:id="@+id/setUpFragment"
+        android:name="com.my.path.ui.fragment.min.SetUpFragment"
+        android:label="SetUpFragment"/>
+    <fragment
+        android:id="@+id/shieldingFragment"
+        android:name="com.my.path.ui.fragment.min.ShieldingFragment"
+        android:label="ShieldingFragment"/>
+
+    <fragment
+        android:id="@+id/registeredFragment"
+        android:name="com.my.path.ui.fragment.login.RegisteredFragment"
+        android:label="RegisteredFragment"/>
+    <fragment
+        android:id="@+id/registeredEmailFragment"
+        android:name="com.my.path.ui.fragment.login.RegisteredEmailFragment"
+        android:label="RegisteredEmailFragment"/>
+
+    <fragment
+        android:id="@+id/forgetEmailFragment"
+        android:name="com.my.path.ui.fragment.login.ForgetEmailFragment"
+        android:label="ForgetEmailFragment"/>
+
+    <fragment
+        android:id="@+id/forgetPwdFragment"
+        android:name="com.my.path.ui.fragment.login.ForgetPwdFragment"
+        android:label="ForgetPwdFragment"/>
+
+    <fragment
+        android:id="@+id/loginCodeFragment"
+        android:name="com.my.path.ui.fragment.login.LoginCodeFragment"
+        android:label="LoginCodeFragment"/>
+
+
+    <fragment
+        android:id="@+id/pictureViewerFragment"
+        android:name="com.my.path.ui.fragment.message.PictureViewerFragment"
+        android:label="PictureViewerFragment"/>
+
+</navigation>

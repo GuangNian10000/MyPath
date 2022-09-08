@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="m"
+            type="com.my.path.data.model.bean.PostHead" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/itemFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="23dp"
+            android:paddingBottom="23dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp">
+
+            <include
+                android:id="@+id/include6"
+                layout="@layout/item_user_head_comment_esy"
+                app:addtime="@{m.updated}"
+                app:uinfo="@{m.author}"
+                bind:layout_editor_absoluteX="18dp" />
+
+            <!--text-->
+            <com.ctetin.expandabletextviewlibrary.ExpandableTextView
+                android:id="@+id/tvContent"
+                gone="@{m.type.equals(`gift`)||m.type.equals(`pic`)}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:includeFontPadding="false"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="1.8dp"
+                app:setExpandableTextView="@{m.content}"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                app:ep_contract_text=""
+                app:ep_expand_color="@color/book_like_lz"
+                app:ep_expand_text="@string/book_activity_zk"
+                app:ep_max_line="3"
+                app:ep_need_always_showright="false"
+                app:ep_need_animation="true"
+                app:ep_need_contract="true"
+                app:ep_need_self="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include6" />
+
+            <!--gift-->
+            <LinearLayout
+                gone="@{!m.type.equals(`gift`)}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:includeFontPadding="false"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:text="@{m.content}"
+                    android:layout_marginEnd="4dp"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    app:loadPic="@{m.img}"/>
+            </LinearLayout>
+            <!--pic-->
+            <ImageView
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                gone="@{!m.type.equals(`pic`)}"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="42dp"
+                app:showImage="@{m.img}"
+                app:loadPic="@{m.img}"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvContent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="@{m.chaptername}"
+                    android:textColor="#B7B7B7"
+                    android:textSize="12sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/ic_pingldaseazd"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView15"
+                    app:layout_constraintEnd_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@{String.valueOf(m.replycount)}"
+                    android:textColor="#8C8C8C"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginEnd="2dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                    app:layout_constraintEnd_toStartOf="@+id/textView14"
+                    app:layout_constraintTop_toTopOf="@+id/textView14"
+                    app:showLike="@{m.isliked==1}" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{String.valueOf(m.likecount)}"
+                    android:textColor="#8C8C8C"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView13" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#F4F4F5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginStart="18dp"
+            android:text="@{`评论回复（`+m.replycount+`）`}"
+            android:textColor="#333333"/>
+    </LinearLayout>
+
+</layout>
+

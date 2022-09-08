@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="title"
+            type="String" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_below="@+id/titleName"
+            android:layout_width="52dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="-12dp"
+            android:background="@drawable/bg_text_home_title"/>
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@={title}"
+            android:textColor="#333333"
+            android:textSize="24sp"/>
+
+    </RelativeLayout>
+</layout>
+

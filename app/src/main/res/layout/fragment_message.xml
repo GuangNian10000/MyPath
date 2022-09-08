@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="proxyClick"
+            type="com.my.path.ui.fragment.home.MessageFragment.ProxyClick" />
+
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.home.MessageViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="18dp"
+            android:paddingTop="38dp"
+            android:paddingEnd="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/include"
+                layout="@layout/view_home_title_text"
+                app:title="@={viewmodel.title}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.my.path.app.weight.textview.MediumBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quanbuyiduashje"
+                android:onClick="@{()->proxyClick.tipReadall()}"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/include" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="22dp"
+                        android:paddingStart="18dp"
+                        android:paddingEnd="18dp">
+
+                        <include
+                            layout="@layout/view_message_item"
+                            android:visibility="gone"
+                            app:desc="@={viewmodel.tipIndex.comment.desc}"
+                            app:num="@={viewmodel.tipIndex.comment.num}"
+                            app:name="@{@string/yiuoandkasje}"
+                            app:imageSrc="@{@drawable/xitongtongzhi}"/>
+                        <include
+                            layout="@layout/view_message_item"
+                            app:desc="@={viewmodel.tipIndex.ticket.desc}"
+                            app:num="@={viewmodel.tipIndex.ticket.num}"
+                            app:name="@{@string/yiuoandkasje}"
+                            android:onClick="@{()->proxyClick.inTicketList()}"
+                            app:imageSrc="@{@drawable/ic_tuijianbdoase}"/>
+                        <include
+                            layout="@layout/view_message_item"
+                            app:desc="@={viewmodel.tipIndex.gift.desc}"
+                            app:num="@={viewmodel.tipIndex.gift.num}"
+                            app:name="@{@string/dasdsrfser}"
+                            android:onClick="@{()->proxyClick.inGiftList()}"
+                            app:imageSrc="@{@drawable/ic_dashangvdajkhse}"/>
+                        <include
+                            layout="@layout/view_message_item"
+                            app:desc="@={viewmodel.tipIndex.comment.desc}"
+                            app:num="@={viewmodel.tipIndex.comment.num}"
+                            app:name="@{@string/pinglhdunjakse}"
+                            android:onClick="@{()->proxyClick.inCommentList()}"
+                            app:imageSrc="@{@drawable/pingludnbakjse}"/>
+                        <include
+                            layout="@layout/view_message_item"
+                            app:desc="@={viewmodel.tipIndex.hongbao.desc}"
+                            app:num="@={viewmodel.tipIndex.hongbao.num}"
+                            app:name="@{@string/hongbdaisoe}"
+                            android:onClick="@{()->proxyClick.inRedList()}"
+                            app:imageSrc="@{@drawable/hongbaosdjalske}"/>
+                    </LinearLayout>
+            </ScrollView>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

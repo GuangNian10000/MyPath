@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.AccountSecurityViewModel" />
+
+        <variable
+            name="click"
+            type="com.my.path.ui.fragment.setup.AccountSecurityFragment.ProxyClick" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F7F7F7"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/includeToolbar"
+            layout="@layout/include_title"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fff7f7f7"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rl_shouji"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+
+                <ImageView
+                    android:id="@+id/image_shouji"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/account_check_bind" />
+                <LinearLayout
+                    android:layout_toRightOf="@+id/image_shouji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shouji"
+                        android:textColor="#212121"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv_shoujimians"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:textColor="#9C9C9C"
+                        android:textSize="12sp"
+                        android:text="@={viewmodel.phoneBindDes}"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_shouji_bangd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="13sp"
+                    android:textColor="#3C3C3C"
+                    android:background="@drawable/bg_accoun_bind"
+                    android:layout_alignParentRight="true"
+                    android:text="@={viewmodel.phoneBindDes}"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_youxiang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+                <ImageView
+                    android:id="@+id/image_youxiang"
+                    android:layout_width="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="24dp"
+                    android:src="@drawable/account_check_bind"/>
+                <LinearLayout
+                    android:layout_toRightOf="@+id/image_youxiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/youxiangsdxc"
+                        android:textColor="#212121"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv_youxiang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="@string/wweibangdasd"
+                        android:textColor="#9C9C9C"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_youxiang_bangd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="13sp"
+                    android:textColor="#3C3C3C"
+                    android:background="@drawable/bg_accoun_bind"
+                    android:layout_alignParentRight="true"
+                    android:text="立即绑定"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_shezhimima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp">
+                <ImageView
+                    android:id="@+id/image_mima"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/account_check_bind"/>
+                <LinearLayout
+                    android:layout_toRightOf="@+id/image_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="14dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shezhiminsad"
+                        android:textColor="#212121"
+                        android:textSize="15sp" />
+                    <TextView
+                        android:id="@+id/tv_mima_miaos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="未设置密码"
+                        android:textColor="#9C9C9C"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingLeft="8dp"
+                    android:textSize="13sp"
+                    android:textColor="#3C3C3C"
+                    android:background="@drawable/bg_accoun_bind"
+                    android:layout_alignParentRight="true"
+                    android:text="设置密码"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#fff7f7f7"/>
+        <RelativeLayout
+            android:id="@+id/rl_xiugaimia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="18dp"
+            android:visibility="gone"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="18dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:textSize="16sp"
+                android:text="修改密码"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</layout>

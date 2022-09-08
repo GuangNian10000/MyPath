@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="10dp"
+    android:orientation="vertical">
+
+    <com.lihang.ShadowLayout
+        android:id="@+id/ShadowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:hl_cornerRadius="16dp"
+        app:hl_shadowColor="@color/home_yiny"
+        app:hl_shadowLimit="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <FrameLayout
+                        android:id="@+id/frameLayoutBook"
+                        android:layout_width="63dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <include
+                            layout="@layout/view_book_cover"/>
+                    </FrameLayout>
+
+                    <com.my.path.app.weight.textview.MediumBoldTextView
+                        android:id="@+id/tvBookName"
+                        android:layout_width="0dp"
+                        android:maxLines="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:includeFontPadding="false"
+                        android:text="高冷学霸不好撩"
+                        android:textColor="#333333"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/frameLayoutBook"
+                        app:layout_constraintTop_toTopOf="@+id/frameLayoutBook" />
+
+                    <TextView
+                        android:id="@+id/tvZzm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:text="养乐多"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/frameLayoutBook"
+                        app:layout_constraintStart_toEndOf="@+id/frameLayoutBook" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conData"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_data_writing_dae"
+                    android:layout_marginTop="12dp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="19dp"
+                    android:layout_height="wrap_content">
+
+                    <com.my.path.app.weight.textview.MediumBoldTextView
+                        android:id="@+id/mediumBoldTextView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="数据情况"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_jiantouxshang"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mediumBoldTextView4">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:id="@+id/tvjrtjp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="昨日推荐票"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvZrlll"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="昨日浏览量"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvJrscl"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="昨日收藏量"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conSy"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_data_writing_dae"
+                    android:layout_marginTop="12dp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="19dp"
+                    android:layout_height="wrap_content">
+
+                    <com.my.path.app.weight.textview.MediumBoldTextView
+                        android:id="@+id/mediumBoldTextView224"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收益情况"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_jiantouxshang"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mediumBoldTextView224">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvBydy"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="本月订阅"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvBylw"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="本月礼物"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/conXfjl"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bg_data_writing_dae"
+                    android:layout_marginTop="12dp"
+                    android:paddingStart="18dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="18dp"
+                    android:paddingBottom="19dp"
+                    android:layout_height="wrap_content">
+
+                    <com.my.path.app.weight.textview.MediumBoldTextView
+                        android:id="@+id/mediumBoldTextView234"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="稿费记录"
+                        android:textColor="#333333"
+                        android:textSize="14sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_jiantouxshang"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/mediumBoldTextView234">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvSygf"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="上月稿费"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <com.my.path.app.weight.textview.MediumBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="233"
+                                android:id="@+id/tvLjgfs"
+                                android:textSize="14sp"
+                                android:includeFontPadding="false"
+                                android:textColor="#333333"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:includeFontPadding="false"
+                                android:layout_marginTop="5dp"
+                                android:textSize="12sp"
+                                android:text="累计稿费"
+                                android:textColor="#A5A5A5"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.lihang.ShadowLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

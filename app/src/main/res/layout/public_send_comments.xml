@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:id="@+id/rl"
+android:paddingTop="10dp"
+android:paddingBottom="10dp">
+<EditText
+    android:id="@+id/tv_comment_neirong"
+    android:layout_width="match_parent"
+    android:textCursorDrawable="@drawable/base_color_cursor"
+    android:layout_height="wrap_content"
+    android:layout_toLeftOf="@+id/tv_fasong"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/bg_comment_pinglun_bg"
+    android:paddingLeft="20dp"
+    android:paddingTop="8dp"
+    android:maxLines="1"
+    android:paddingBottom="8dp"
+    android:textColor="#212121"
+    android:textSize="14dp"
+    android:hint="@string/book_activity_hfpl"/>
+
+<TextView
+    android:id="@+id/tv_fasong"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/bg_comment_fasong_bg"
+    android:paddingLeft="11dp"
+    android:paddingTop="6dp"
+    android:paddingRight="11dp"
+    android:paddingBottom="6dp"
+    android:text="@string/book_activity_fs"
+    android:textColor="@color/white"
+    android:textSize="14dp" />
+</RelativeLayout>

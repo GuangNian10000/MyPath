@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="m"
+            type="com.my.path.data.model.bean.TipTicketData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="23dp"
+        android:paddingBottom="23dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp">
+
+        <include
+            android:id="@+id/include6"
+            layout="@layout/item_user_head_top_esy"
+            app:addtime="@{m.addtime}"
+            app:uinfo="@{m.uinfo}"
+            bind:layout_editor_absoluteX="18dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_marginTop="17dp"
+            android:layout_height="wrap_content"
+            android:text="@{`给《`+m.bookName+`》投了` +m.num+`票`}"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include6" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

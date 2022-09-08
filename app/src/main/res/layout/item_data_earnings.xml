@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="350">
+    <TextView
+        android:id="@+id/tvChapter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="178"
+        android:background="@drawable/bg_wireframe_flase_top"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/zhangjiemingca"
+        android:textColor="#222222"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvSub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:background="@drawable/bg_wireframe_flase_top_left_right"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/dingyehusadawe"
+        android:textColor="#222222"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="92"
+        android:background="@drawable/bg_wireframe_flase_top"
+        android:gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="8dp"
+        android:text="@string/jiegeasdawe"
+        android:textColor="#FB5B5B"
+        android:textSize="11sp" />
+</LinearLayout>

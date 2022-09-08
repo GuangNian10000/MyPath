@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="base_color">#FF544C</color>
+    <color name="base_color_q">#FF837E</color>
+    <color name="base_color_66">#66FF544C</color>
+    <color name="text_color_black_21">#212121</color>
+    <color name="text_color_black_22">#222222</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="book_view_xian">#fff7f7f7</color>
+    <color name="tanchuansdgawe">#999999</color>
+    <color name="c1c1c1">#C1C1C1</color>
+
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorGray">#333</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="login_service_sc">#efb046</color>
+    <color name="home_yiny">#10000000</color>
+    <color name="msauydae">#AAAAAA</color>
+    <color name="shanshansha">#333333</color>
+    <color name="balibali">#808080</color>
+    <color name="public_title_text">#3C3C3C</color>
+
+    <color name="book_comments_text_back">#589FFF</color>
+    <color name="book_comments_huifu">#505050</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="qulusidalse">#9DD085</color>
+    <color name="read_bg_tu_2">#DEDEDE</color>
+    <color name="main_rank_text_title_off">#212121</color>
+    <color name="shape_reading_set_bg_22">#9C9C9C</color>
+
+    <color name="transparent_00">#00000000</color>
+    <color name="text_cad">#FB5B5B</color>
+
+    <color name="page_writing">#F4F4F5</color>
+    <!--字体颜色-->
+    <color name="textSecond">#737373</color>
+    <color name="book_like_wj">#98C981</color>
+    <color name="book_like_lz">#5194EF</color>
+    <color name="book_like_ww">#6C6C6C</color>
+    <color name="text_noasd">#999999</color>
+
+    <color name="tv_indicator_off">#CBCED9</color>
+    <color name="tv_indicator_on">#4489FD</color>
+    <color name="login_user_hint">#CCCCCC</color>
+    <color name="asdiaw">#f4f4f4</color>
+
+</resources>

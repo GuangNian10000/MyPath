@@ -1,0 +1,424 @@
+<resources>
+    <string name="app_name">读乐星空作家助手</string>
+
+    <string name="qingsiuadwanglda">请求网络中...</string>
+    <string name="dengbudasesad">登录</string>
+    <string name="zhucesahdiawsed">注册</string>
+    <string name="wangjimimadawsd">忘记密码？</string>
+    <string name="yanzmasddenglasd">验证码登录</string>
+    <string name="qingshurunindase">请输入您的账号/手机号</string>
+    <string name="qingshurunindeadse">请输入您的密码</string>
+    <string name="gouxuanfuawx">请勾选用户服务协议</string>
+    <string name="qingianxiwancsa">请填写完整的信息</string>
+    <string name="kuaiqucchuangdjiawne">快去创建你的作品吧～</string>
+    <string name="kaishichuangzuo">开始创作</string>
+    <string name="bianjizhangdjiawsed">编辑章节</string>
+    <string name="gengduochosandase">更多功能</string>
+    <string name="shenghezhonasd">审核中</string>
+    <string name="qubaochenggasdwae">投诉成功</string>
+    <string name="service_yinsixieyi">隐私保护提示</string>
+    <string name="service_agreement">
+        读乐星空作家助手隐私政策
+        \n\n本隐私政策更新日期：2022年8月31日
+        \n\n本隐私政策生效日期：2022年9月31日
+        \n\n武汉书谷网络科技有限公司作为读乐星空作家助手的运营者，尊重并保护您的隐私。
+        \n\n《隐私政策》是由您（以下称为「用户」）与武汉书谷网络科技有限公司（本公司）之间关于您使用本公司阅读平台（以下简称「本平台」）服务所订立的协议。请您务必审慎阅读、充分理解本协议各条款内容，特别是免除或限制责任的条款、管辖与法律适用条款，以及开通或使用某项服务的单独协议限制、免责条款可能以加粗形式提示您注意。
+\n\n除非您已阅读并接受本协议所有条款，否则您无权下载/安装/浏览/使用本平台及相关服务。您的下载、安装、使用、获取账号、登录等行为即视为您已阅读并同意上述协议的约束。
+\n\n如果您未满18周岁，请在法定监护人的陪同下阅读本协议，并特别注意未成年人使用条款。
+1. 特别提示
+\n\n1.1 本公司同意按照本协议的规定及其不时发佈的操作规则提供基于互联网的相关服务(以下称网络服务)。为获得本服务，用户同意本协议的全部条款并通过运营商正规渠道获取的手机号码进行账号注册。注册过程中需进行短讯验证并绑定一个有效的手机号码，点击「注册」/「登录」按钮即表示用户已经详细阅读了本协议的内容，同意遵守本协议的约定。用户不应再以不了解本协议内容为由拒绝履行本协议。本公司有权对本协议随时进行修改与更新，并在相关官方网站公告修改、新增、删除的内容，而不另行对用户进行个别通知。修改后的服务协议一旦在页面上公布即有效代替原来的服务协议。请用户随时造访查看本协议的最新版本。用户在使用本公司提供的各项服务之前，应仔细阅读本服务协议，如用户不同意本服务协议及/或随时对其的修改，用户可以主动取消本公司提供的网络服务。
+\n\n1.2 用户在使用本公司某一特定服务时，该服务可能会另有单独的协议、相关业务规则等（以下统称为「单独协议」）。用户在使用该项服务前请阅读并同意相关的单独协议；用户使用前述特定服务，即视为用户相关单独协议。例如：如果用户需要使用收费网络服务时需阅读并遵守《付费服务购买协议》（如有）。上述内容一经正式发佈，即为本协议不可分割的组成部分，用户同样应当遵守。用户对前述任何业务规则、单独协议的接受，即视为用户对本协议全部的接受。
+2. 服务内容
+\n\n2.1 本平台包括读乐星空作家助手（m.dlxk.com）、读乐星空作家助手APP软件，其服务的具体内容由本公司根据实际情况提供，包括但不仅限于文学作品阅读、论坛(BBS)、发表评论、电子邮件、无线服务等。本公司保留随时变更、中断或终止部分或全部网络服务的权利。
+\n\n2.2 本公司在提供网络服务时，可能会对部分网络服务(例如付费订阅作品)的用户收取一定的费用。在此情况下，本公司会在相关页面上做明确的提示。如用户拒绝支付该等费用，则不能使用相关的网络服务。
+\n\n2.3 用户理解，使用本公司的网络服务需自行淮备与相关服务有关的终端设备（如电脑、调製解调器等装置），并承担所需的费用（如电话费、上网费等费用）。用户理解并同意，使用网络服务时会耗用用户的终端设备和带宽等资源。
+3. 使用规则
+\n\n3.1 用户应使用正版软件接受本公司提供的网络服务。
+\n\n3.2 用户在申请使用本公司提供的网络服务时，可能需要填写一些必要的信息。若国家法律法规有特殊规定的，用户需要填写真实的身份信息，依据相关法律规定和本协议约定对所提供的信息承担相应的法律责任。如因资料提供不淮确或所提供的资料已变更而未更新而导致本公司无法为用户提供或进一步提供服务，本公司不因此承担任何责任。
+\n\n3.2 用户注册成功后，本平台将给予每个用户一个用户账号及相应的密码，该用户账号和密码由用户负责保管；用户有义务妥善保管其账号及密码，并正确、安全地使用其账号及密码，并对登录后所持账号产生的行为依法享有权利和承担责任。鉴于网络服务的特殊性，本公司无义务审核是否用户本人使用该组账号及密码，仅审核账号及密码是否与数据库中保存的一致，只要任何人输入的账号及密码与本平台数据库中保存的一致，即可凭藉该组账号及密码登陆并获得网络服务，所以即使用户认为其所有的账号登陆行为并非其本人所为，本公司将不承担因此而产生的任何责任。
+\n\n3.3 用户发现其账号或密码被他人非法使用或有使用异常的情况，应立即通知本平台，并提交该账号为本人所有的有关证明，以便申请暂停该账号的登录和使用；因此而造成的损失，本公司不承担赔偿责任。
+\n\n3.4 用户在使用本公司网络服务过程中，必须遵循以下原则：
+\n\n（1）遵守中国有关的法律和法规；
+\n\n（2）遵守所有与网络服务有关的网络协议、规定和程序；
+\n\n（3）不得为任何非法目的而使用网络服务系统；
+\n\n（4）不得利用本公司网络服务系统进行任何可能对互联网的正常运转造成不利影响的行为；
+\n\n（5）不得利用本公司网络服务系统传输任何骚扰性的、中伤他人的、辱骂性的、恐吓性的、庸俗淫秽的或其他任何非法的信息资料；
+\n\n（6）不得未经本公司授权利用其提供的网络服务以任何方式收集任何其它用户的信息，包括但不限于用户的个人身份信息和通讯信息；
+\n\n（7）不得接收或下载由其他本平台用户传输的用户所知道或应当知道不能以此方式合法传播的任何材料；
+\n\n（8）不得利用本公司服务系统进行任何不利于本公司及其关联公司的行为；
+\n\n（9）就本公司及合作商业伙伴的服务、产品、业务谘询应採取相应机构提供的沟通渠道，不得在公众场合发佈有关本公司及相关服务的负面宣传。
+\n\n3.5 关于用户付费的特别提示：
+\n\n（1）对于本公司的收费服务，用户应该按照本平台确定的资费政策购买本公司服务；否则，本公司可以立即停止向用户提供该服务。
+\n\n（2）本公司将有权决定本平台服务的资费标淮和收费方式，本公司可能会就不同的服务制定不同的资费标淮和收费方式，也可能按照本公司所提供的服务的不同阶段确定不同的资费标淮和收费方式；另外，本公司也可能不时地修改本平台的资费政策。
+\n\n（3）在本平台支付系统中，用户通过任何支付手段为其账号充值所直接获得的均为「星空币」。 除非法律另有明文规定，否则用户不得要求本平台返还用户已经支付予本平台的任何资费，无论该等资费是否已被消费。本平台有权决定是否、何时、以何种方式向用户退款。
+\n\n（4）在使用本平台充值系统时，用户必须仔细确认自己的账号，若因为用户自身输入账号错误、操作不当或不了解充值计费方式等因素造成充错账号、错选充值种类等情形而损害自身权益，不得因此要求本平台作任何补偿或赔偿。
+\n\n3.6 用户使用根据本协议获得的用户账号和密码登录本平台或接受第三方提供的服务项目时，应遵守该平台或服务项目的相关服务协议及使用守则，用户登录上述平台或接受上述服务项目时即视为对相关服务协议及使用守则的接受。本公司和第三方对可能出现的纠纷在法律规定和约定的范围内各自承担责任。
+4. 内容所有权
+\n\n4.1 本公司提供的网络服务内容可能包括：文字、软件、声音、图片、录象、图表（包括相关的软件）的著作权、商标、商业秘密、其他知识产权、所有权或其他权利等，均为本公司或其权利人所有，用户在使用本服务中所产生的内容的知识产权归用户或相关权利人所有。
+\n\n4.2 上述及其他任何本服务包含的内容的知识产权均受到法律保护，未经本公司、用户或相关权利人书面许可，任何人不得擅自修改、拷贝、散布、传送、展示、执行、複製、发行、授权、製作衍生著作、移转或销售上述内容，或以任何形式进行使用或创造相关衍生作品。
+\n\n4.3 除另有特别声明外，本公司提供网络服务时所依託软件的著作权、专利权及其他知识产权均归本公司所有。
+\n\n5. 隐私保护
+\n\n5.1 保护用户（特别是未成年人）的隐私是本公司的一项基本政策，因此，若父母（监护人）希望未成年人（尤其是十岁以下子女）得以使用网络服务，必须以父母（监护人）名义申请注册，在接受网络服务时，应以法定监护人身份加以判断本服务是否符合于未成年人。本公司保证不对外公开或向第三方（5.2所列情况除外）提供用户注册资料及用户在使用网络服务时存储在本平台的非公开内容，但下列情况除外：
+\n\n（1）事先获得用户的明确授权；
+\n\n（2）根据有关的法律法规要求；
+\n\n（3）按照相关政府主管部门的要求；
+\n\n（4）为维护社会公众的利益；
+\n\n（5）为维护本公司的合法权益。
+\n\n5.2 本公司可能会与第三方合作向用户提供相关的网络服务，在此情况下，如该第三方同意承担与本公司同等的保护用户隐私的责任，则本公司可将用户的注册资料等提供给该第三方。
+\n\n5.3 在不透露单个用户隐私资料的前提下，本公司有权对整个用户数据库进行技术分析并对已进行分析、整理后的用户数据库进行商业上的利用。用户理解并同意，本公司的服务是按照现有技术和条件所能达到的现状提供的。本公司会尽最大努力向用户提供服务，确保服务的连贯性和安全性；但不能随时预见和防范法律、技术以及其他风险，包括但不限于不可抗力、病毒、木马、黑客攻击、系统不稳定、第三方服务瑕疵、政府行为等原因可能导致的服务中断、数据丢失以及其他的损失和风险。
+\n\n5.4 账户注销
+\n\n您可以通过【设置】-【账户与安全】-【注销账号】完成自主注销申请，如果因为服务器版本问题而自主注销失败，可以通过邮箱 xiangxs@dlxk.com向我们提出注销申请。
+\n\n如果注销账户14天内再此登陆账户则会自动撤销注销
+\n\n5.5我们如何收集个人信息
+\n\n（1）为了您可以正常使用读乐星空作家助手，在下列情形中我们需要收集您的一些信息，用以向您提供服务、提升我们的服务质量、保障您的账户安全以及执行国家法律法规及监管规定。下列功能对应的权限均为业务功能必须权限，如用户不授予相对应的权限，即无法使用相关功能。
+详细列表如下：
+\n\n1.注册与登录：当您注册、登录本软件及相关服务时，您需要通过手机号创建账号。您还可以在创建账号，编辑您的昵称。
+\n\n为了让您更安全、便捷地登录读乐星空作家助手APP，可以选择使用微信、QQ、FaceBook第三方账号授权登录读乐星空作家助手，向我们提供您的第三方账号信息。如您不同意提供前述信息，您也可以选择手机号与登录密码的方式登录读乐星空作家助手，若您忘记密码，您可以通过短信验证码找回密码。
+\n\n2.账号资料：账号头像、昵称
+\n\n3.账单记录：用户虚拟货币的余额、充值和消费记录
+\n\n4.阅读：用户累计·的作品信息
+\n\n5.消息：用户发表的书评、动态评论以及回复他人的书评、社区评论，或对其他评论和回复的点赞
+\n\n6.我的发布：用户在动态中的发帖记录
+\n\n7.头像挂件：用户获得的头像挂件
+\n\n8.订阅记录、自动购买、赠礼记录：用户对书籍订阅、投月票和打赏的记录
+\n\n9.意见反馈：反馈问题时提交的账号、设备号、错误日志
+\n\n10.录音：当您使用消息语音发送功能时，我们会收集您的语音内容，因为收集时实现上述功能所必需的，我们实时处理后会向您返回结果，不会保存您的数据。
+\n\n 您在使用本软件时，为提供、处理、维护、改善、开发我们的商品和提供给您的服务之目的，本软件可能获取您终端设备的如下权限：
+\n\n 消费
+\n\n当您使用本软件的充值和消费功能时，在支付过程中，我们需要调取您设备上的相应的支付工具，收集您的第三方支付账户的账号信息，同时收集您在本产品中的用户虚拟货币的余额、充值和消费记录信息，以便后续服务过程中查询您的交易记录，我们将尽最大程度保护您的虚拟物品安全，收集上述信息为实现软件的消费功能所必须，否则将无法完成交易。
+\n\n6. 第三方服务
+\n\n为保障相关功能的实现，读乐星空作家助手应用中可能会接入第三方提供的软件开发包（以下简称第三方SDK），第三方SDK将直接收集和处理您的信息；
+\n\n（1）授权登录SDK
+\n\n腾讯移动开放平台SDK、微信登录SDK、FaceBook登陆SDK。这些SDK需要获取您设备的国际移动设备识别码（IMEI），并可能会收集您的手机号码（中国移动互联网SDK）、安卓系统封装用户ID、QQ号码（腾讯移动开放平台SDK）、微信号码（微信登录SDK）其中FaceBookSSO登录SDK可能需要您的储存权限，用于实现产品登录功能。
+\n\n（2）推送SDK
+\n\n为了向您及时推送服务通知，我们使用了阿里云推送、小米推送 、华为推送、OPPO推送、魅族推送、vivo推送SDK，这些SDK需要获取您设备的国际移动设备识别码（IMEI），并可能会收集您设备的设备品牌、设备型号、系统类型、系统版本、设备屏幕尺寸信息、安卓系统封装用户ID，用于实现APP推送服务
+\n\n（3）支付SDK
+\n\n为了向您提供更加便捷、多元的支付手段，我们使用了支付宝支付SDK、微信支付SDK，GooglePaySDK可能需要获取您设备的国际移动设备识别码（IMEI）、安卓系统封装用户ID、设备品牌、设备型号、系统类型、系统版本、设备屏幕尺寸信息、手机存储信息，用于实现在线支付功能。
+\n\n（4）异常统计SDK
+为了向您提供更好的功能体验、改进产品服务，我们使用了FirebaseSDK，可能需要收集您设备的AndroidID、国际移动设备识别码（IMEI）、安卓系统封装用户ID、设备Mac地址、设备品牌、设备型号、系统类型、系统版本、设备屏幕尺寸信息，可能需要您的存取权限，以记录服务中的异常情况，帮助读乐星空作家助手产品定位并修复问题，提升服务体验。
+\n\n（5）Glide图片框架SDK
+为了缓存图片和更好加载显示图片内容，我们使用了Glide图片框架SDK，我们会请求您授权同意存储权限，
+\n\n（6）OkHttp安卓网络框架SDK
+\n\n为了提升网络使用效率，我们使用了Square公司的OkHttp安卓网络框架SDK(okio) ，我们会请求您授权同意存储权限
+\n\n7.所需设备权限及使用说明
+\n\n您在使用读乐星空作家助手对应服务时可能需要调用或使用您的设备功能用于收集和使用您的个人信息。当您使用服务之前，您可选择是否授权我们开通以下权限：
+\n\n允许程序读取用户的操作系统、手机/设备型号信息、系统UA、日程信息、IP地址、手机网卡地址、系统封装用户id，应用程序版本及来源渠道，网络类型和触发服务的日志信息，使本软件功能可以兼容不同系统和机型，确定未登录前用户标识，判断程序崩溃原因，优化小说内容展示效果，提升阅读体验
+\n\n(1)获取用户的软件安装列表
+\n\n本应用支持微信、QQ、FaceBook第三方登录，因此会获取用户的软件安装列表来查找设备有没有安装此类应用，没有安装则不会显示或提示用户去下载
+\n\n(2)存储权限（修改或删除、访问存储卡中的内容）
+\n\n本应用支持离线模式小说文本缓存，数据会缓存至您的存储卡，在没有网络的状态下app会默认读取缓存，并提供"缓存管理"功能可手动删除缓存，避免暂用不必要的空间，因此会获取存储权限。
+\n\n(3)相机
+\n\n用户修改头像、背景图、发布动态需要访问相机
+\n\n(4)网络权限
+\n\n允许程序访问网络连接，使本软件可以正常联网；
+\n\n(5)修改系统设置
+\n\n允许程序读取或写入系统设置，使本软件可以在用户使用夜间模式时，更改用户界面设置，修改手机亮度；
+\n\n(6)获取AndroidId、设备Id
+\n\n为了向您提供更好的功能体验、改进产品服务，我们使用了FirebaseSDK，可能需要收集您设备的AndroidID、国际移动设备识别码（IMEI）、安卓系统封装用户ID、设备Mac地址、设备品牌、设备型号、系统类型、系统版本、设备屏幕尺寸信息，可能需要您的存取权限，以记录服务中的异常情况，帮助读乐星空作家助手产品定位并修复问题，提升服务体验。
+\n\n8. 免责声明
+\n\n8.1 本公司不保证以下事宜：
+\n\n（1）本服务将符合用户的要求；
+\n\n（2）本服务将不受干扰、及时提供、安全可靠或不会出错；
+\n\n（3）本平台将努力保证连载作品的完整性，但如果由于作者或其它非本平台所能控制的原因导致作品的连载不能继续时，本平台对用户不承担任何责任；
+\n\n（4）因用户滥用账号权利而对本平台服务构成破坏、损害时，本平台有权停止该账号的使用权利。
+\n\n8.2 用户明确同意其使用本公司提供的网络服务所存在的风险将完全由其自己承担；因其使用网络服务而产生的一切后果也由其自己承担，本平台对用户不承担任何责任。
+\n\n8.3 用户应对其在本平台时所获得的账号及使用该账号登入网络服务系统后所开始的一系列行为或活动负责。若用户未能妥善保管使用此账号及密码，如：将账号及密码泄漏或提供第三人知悉、出借或转让与他人使用及其他因用户自身过错而导致的账号或密码泄漏，从而给用户造成损失的，用户应自行承担责任，本平台对用户不承担任何责任。
+\n\n8.4 本平台有权监测本平台注册账户的活跃程度；对账户注册之日起6个月内无活动记录的账户，本公司有权暂停向其提供网络服务；用户向本平台重新申请核实身份后，可以恢复其服务。
+\n\n9. 服务变更、中断或终止
+\n\n9.1 鉴于网络服务的特殊性，用户同意本公司有权根据业务发展情况随时变更、中断或终止部分或全部的网络服务，无需对任何用户或任何第三方承担任何责任。如因系统维护或升级的需要而需暂停网络服务，本平台将儘可能事先进行通告。
+\n\n9.2 如发生下列任何一种情形，本公司有权随时中断或终止向用户提供本协议项下的网络服务且不承担任何责任：
+\n\n（1）有违反本服务协议的行为；
+\n\n（2）滥用所享受的权利；
+\n\n（3）提供虚假注册信息；
+\n\n（4）通过不正当手段使用本公司提供的网络服务；
+\n\n（5）有损本公司及其权利人、关系企业或合作对象的权益和其他用户合法权益的行为；
+\n\n（6）违反中国的法律、法规；
+\n\n（7）违背社会风俗和社会道德的行为；
+\n\n（8）其他违反本平台相关规定的行为。
+\n\n9.3 除前款所述情形外，本公司同时保留在不事先通知用户的情况下随时中断或终止部分或全部网络服务的权利，对于所有服务的中断或终止而造成的任何损失，本公司无需对用户或任何第三方承担任何责任。
+10. 违约赔偿
+\n\n10.1 用户同意保障和维护本平台及其他用户的利益，如果用户违反了有关法律、法规或本协议项下的任何条款，相关国家机关或机构可能会对该用户提起诉讼、罚款或採取其他制裁措施，并要求本公司给予协助。造成损害的，用户应依法予以赔偿，本公司不承担任何责任。若导致任何第三方损害的，用户应当独立承担责任；本公司因此遭受损失的，用户也应当一併赔偿。
+\n\n10.2 用户利用本平台或者本平台漏洞非法获取收益的，本平台有权扣除用户账号内非法所得部分、删除用户的账号和号和要求用户赔偿因此给本公司造成的全部损失，并保留对用户追究法律责任的权利。用户在此明确同意承担上述违约责任。
+\n\n10.3 本公司对于用户使用网络服务或无法使用网络服务所产生的任何直接、间接、衍生的损害或所失利益不负任何损害赔偿责任。
+11. 法律管辖
+\n\n11.1 本协议的订立、执行和解释及争议的解决均应适用中国法律。
+\n\n11.2 本协议的订立、履行、解释及争议的解决均应以本公司所提供之任何形式之电子数据、书面数据等相关内容为淮，用户在此确认该等数据的淮确性、有效性、合法性。
+\n\n11.3 如双方就本协议内容或其执行发生任何争议，双方应尽量友好协商解决；协商不成时，任何一方均应向上海市浦东新区人民法院提起诉讼。
+12. 通知和送达
+\n\n应用中集成了小米推送 、华为推送、OPPO推送、魅族推送、vivo推送相关消息推送SDK
+\n\n本协议项下所有的通知均可通过重要页面公告、电子邮件或常规的信件传送等方式进行；该等通知于发送之日视为已送达收件人。
+13. 其他规定
+\n\n13.1 本协议构成双方对本协议之约定事项及其他有关事宜的完整协议，除本协议规定的之外，未赋予本协议各方其他权利。
+\n\n13.2 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其馀条款仍应有效并且有约束力。
+\n\n13.3 本公司保留对本协议条款、产品和服务以及本公司所提供的产品和服务的相关官方网站的最终解释权。
+\n\n13.4 本协议中的标题仅为方便而设，不具法律或契约效果。
+    </string>
+    <string name="service_tongyi">同意并继续</string>
+    <string name="service_butongyi">不同意</string>
+
+    <string name="znawushujuasawe">暂无更多数据</string>
+    <string name="xingkongBiadwe">星空币</string>
+    <string name="pingvi">屏蔽</string>
+    <string name="toushua">投诉</string>
+    <string name="quxioass">取消</string>
+    <string name="shangchuasndwda">上传</string>
+    <string name="dingyeasudaes">订阅数</string>
+    <string name="zhangjiemingca">章节名称</string>
+    <string name="jiegeasdawe">价格</string>
+    <string name="dingyehusadawe">订阅数</string>
+    <string name="zhanshigebgdawe">展开更多</string>
+    <string name="weishengheasd">未审核</string>
+    <string name="tongupashcawd">通过初审</string>
+    <string name="jingzhidawddawd">禁止提交审核</string>
+    <string name="changjiansduawse">创建</string>
+    <string name="shuruhduashdkase">请输入作品名称</string>
+    <string name="shudajskldhjklawe">请输入20-200字作品简介，不可出现低俗，暴力，血腥等不合法律的内容</string>
+    <string name="leixfensdijase">类型分类</string>
+    <string name="qingxuiandhuase">请选择类型分类</string>
+    <string name="xingxiangshidjiase">性向视角</string>
+    <string name="qingshurhuaxdhjsae">请选择性向视角</string>
+    <string name="shidaifenggeasdase">时代风格</string>
+    <string name="xuanzhgjdghjased">请选择时代风格</string>
+    <string name="querendhjkashjke">确认</string>
+    <string name="leixifngdjkase">类型分类</string>
+    <string name="xingxiangshijieaoase">性向视角</string>
+    <string name="shidaifenggeaseasd">时代风格</string>
+    <string name="zhishaoxuanzeyidiasndae">至少选择一项</string>
+    <string name="tianjiazhangjieadase">添加章节</string>
+    <string name="caogaodnjase">草稿</string>
+    <string name="xiuygfasuidase">修改</string>
+    <string name="shouhguiHDJkSAE">收回</string>
+    <string name="shanchusadjklkalse">删除</string>
+    <string name="xingkjdkoasje">星空币/</string>
+    <string name="zijhdjashe">字</string>
+    <string name="dingshigonbdjakse">定时公开</string>
+    <string name="cuncaogaosdsae">存草稿</string>
+    <string name="qitadenglusa">其他方式登录</string>
+    <string name="wanchengdawe">完成</string>
+
+    <string name="fabukjdkasje">发布</string>
+    <string name="qingshurubiaodase">请输入标题</string>
+    <string name="qingshuruzhengwen">请输入正文</string>
+    <string name="zuozheyouhudase">作者有话说</string>
+    <string name="buhuijichsaesadase">不会计入章节字数</string>
+    <string name="quedinghiase">确定</string>
+    <string name="neijkdaksde">内容不能为空</string>
+    <string name="xiugaizhangdjiawesd">修改章节名：</string>
+    <string name="quanbuyiduashje">全部已读</string>
+    <string name="xutonghdase">系统通知</string>
+    <string name="yiuoandkasje">推荐票</string>
+    <string name="dasdsrfser">打赏</string>
+    <string name="pinglhdunjakse">评论</string>
+    <string name="hongbdaisoe">红包</string>
+    <string name="zanshimeishuju">暂无数据</string>
+    <string name="dianwochongshi">点击我重试</string>
+    <string name="shezhibindjhasjeasd">请设置笔名</string>
+    <string name="bimingjzhjkdashe">笔名</string>
+    <string name="qingshezhibimsae">请设置笔名</string>
+    <string name="zuixn">最新</string>
+    <string name="zuire">最热</string>
+    <string name="tuijian">推荐</string>
+    <string name="book_activity_zk">【展开】</string>
+    <string name="book_activity_sh">【收回】</string>
+    <string name="hshanchuodoase">删除</string>
+    <string name="shuoshuonidawesdcdr">说说你的想法吧～</string>
+    <string name="chakandatudawesd">【查看图片】</string>
+    <string name="book_activity_qx">取消</string>
+    <string name="book_activity_tj">提交</string>
+    <string name="huifuPingls">发送</string>
+    <string name="huifupingsa">回复评论</string>
+    <string name="book_activity_hfpl">回复评论</string>
+    <string name="book_activity_fs">发送</string>
+    <string name="pinglnxooe">评论</string>
+    <string name="huifuadasecy">回复 </string>
+    <string name="zidingyibiaowdsd">自定义标签：</string>
+    <string name="quedingdyaoshanhuas">确定要删除该评论？</string>
+    <string name="shanchudasesd">删除</string>
+    <string name="jiajingdiasje">加精</string>
+    <string name="quedingdjsajdsk">确定要加精该评论吗？</string>
+    <string name="zhidingdasdsaae">置顶</string>
+    <string name="quedidsnjsahdjsae">确定要置顶该评论吗？</string>
+    <string name="quxiaodjashdjase">确定要取消置顶吗？</string>
+    <string name="quxiaojiajdiasndusae">确定要取消加精吗？</string>
+    <string name="pinglunxiangdawesd">评论详情</string>
+    <string name="yiqiangwandased">已抢完</string>
+    <string name="xuanzefengmdsake">选择封面</string>
+    <string name="biaoqiandiasjek">标签墙</string>
+    <string name="zuoppinjgdase">作品标签</string>
+    <string name="xiugaizuodase">修改作品信息</string>
+    <string name="shanchuzuopawse">删除作品</string>
+    <string name="shurutuijansdase">请输入推荐语</string>
+    <string name="xiugaidnasje">修改</string>
+    <string name="lulandaweasd">浏览量</string>
+    <string name="shpicangdawe">收藏量</string>
+    <string name="tuijinadpawdasd">推荐票</string>
+    <string name="qiehuanshujidaseasd">切换书籍</string>
+    <string name="sshangyiaweasdase">上移</string>
+    <string name="xiayindawasde">下移</string>
+    <string name="quedinhzhangjiesanshcusad">确定删除该章节吗？</string>
+    <string name="quedingawdsad">确定</string>
+    <string name="quxiaodawd">取消</string>
+    <string name="biaotibunengweikongasd">标题不能为空</string>
+    <string name="neirnongabunegasdawe">内容不能为空</string>
+    <string name="fabudaweasd">确定要发布吗？</string>
+    <string name="cuncaogdawe">确定要存草稿吗？</string>
+    <string name="shouji">手机</string>
+    <string name="youxiangsdxc">邮箱</string>
+    <string name="wweibangdasd">未绑定邮箱</string>
+    <string name="shezhiminsad">设置密码</string>
+    <string name="youxiangxc">请输入邮箱</string>
+    <string name="shurumimasd">请输入密码</string>
+    <string name="youxiangyanmdasd">请输入邮箱验证码</string>
+    <string name="huoquyanzmsa">获取验证码</string>
+    <string name="shoujiashduz">手机注册</string>
+    <string name="shishisyanzm">收不到短信？试试</string>
+    <string name="yiyouzhangshd">已有账号？</string>
+    <string name="shuruxinmima">请输入新密码</string>
+    <string name="xiugainimasd">修改密码</string>
+    <string name="xiugaimiaasdx">修改密码</string>
+    <string name="mimabunengwieskoasd">密码不能为空</string>
+    <string name="dulezuojieashou">读乐作家助手</string>
+    <string name="dyezuozhezhuans">读乐星空作者专用</string>
+    <string name="qingshuruzhangj">请输入手机号</string>
+    <string name="chongzhiiasd">请重置密码</string>
+    <string name="youxxiangzhucs">邮箱注册</string>
+    <string name="chongzhibindnegl">重置并登录</string>
+
+    <string name="denglusadxsa">登录</string>
+    <string name="yuyingyanzmasd">语音验证码</string>
+    <string name="shurujiumima">请输入旧的密码</string>
+
+    <string name="qinttiansahsouji">请填写账号</string>
+    <string name="qingtianxiemia">请填写密码</string>
+    <string name="shifoubaofunasdhnierasd">是否保存此次内容？</string>
+    <string name="baocundawaddawed">保存</string>
+    <string name="bubaocunasdaweaw">不保存</string>
+    <string name="mimazuishaoasd">密码最少6位</string>
+    <string name="mimabuzhidasyi">密码不一致</string>
+    <string name="guobiemabuzhengq">国别码不正确</string>
+    <string name="guobiemasd">选择国别码</string>
+    <string name="shoujihaosdxc">输入手机号</string>
+    <string name="shuruduanxinyanzm">请输入短信验证码</string>
+
+    <string name="zhuxiaozhanahos">注销账号</string>
+    <string name="xiugainima">修改密码</string>
+    <string name="tv_genghuanlijibangd">更换绑定</string>
+    <string name="tv_lijibangd">立即绑定</string>
+    <string name="tv_jieclijibangd">解除绑定</string>
+    <string name="tv_yishezhimima">已设置密码</string>
+    <string name="tv_weishezhimima">未设置密码</string>
+    <string name="tv_yshezhimima">设置密码</string>
+    <string name="bind_shouji_weibangd">未绑定手机号</string>
+    <string name="xianbangdinshou">请先绑定手机号</string>
+    <string name="weiinbuzshi">微信不是最新版或没有安装</string>
+    <string name="qingianbangdingzh">请先绑定手机号</string>
+    <string name="zhaghuanquan">账户与安全</string>
+
+    <string name="bangdingshoujih">绑定手机号</string>
+    <string name="bangdingjdkawd">绑定</string>
+    <string name="bangdingsahoudas">绑定手机号</string>
+    <string name="shoujihobudnegasd">手机号不能为空</string>
+    <string name="yanzhengamasd">验证码不能为空</string>
+    <string name="liJIbangdasd">立即绑定</string>
+    <string name="bangyouasdx">为了您的账号安全，请绑定邮箱</string>
+    <string name="bangdingshoudijasd">为了您的账号安全，请绑定手机号</string>
+    <string name="bangdingyouasdxd">绑定邮箱</string>
+    <string name="zhanghuyuaquansdhuaw">账户与安全</string>
+    <string name="xiugaimiamsadawd">修改密码</string>
+    <string name="yonghuxieyisadawe">《用户协议》</string>
+    <string name="insizhnegdawe">《隐私政策》</string>
+    <string name="duleasdinxcad">读乐星空 版权所有</string>
+    <string name="dulesasdxc">Copyright©2019-2022.ShuGu.</string>
+    <string name="guanyuwomasdx">关于我们</string>
+    <string name="wentihejyi">问题和意见：</string>
+    <string name="shuruyijianwent">输入您的问题或意见</string>
+    <string name="yicansgdtu">图片上传中或异常</string>
+    <string name="banbenhaosadx">版本号：</string>
+    <string name="yonghuxieyizdas">《用户协议》</string>
+    <string name="yingsizhengscsad">《隐私政策》</string>
+    <string name="user_base_toux">头像</string>
+    <string name="user_base_nick">昵称</string>
+    <string name="user_base_xingb">性别</string>
+    <string name="user_base_zhangh">账号</string>
+    <string name="nan">男</string>
+    <string name="nvs">女</string>
+    <string name="baomis">保密</string>
+    <string name="zhanghuanq">账户与安全</string>
+    <string name="pingbiguandlwaie">屏蔽管理</string>
+    <string name="yuyanshezhiaewa">语言设置</string>
+    <string name="xiaoxituisongasd">消息推送</string>
+    <string name="guanyuwmasdxc">关于我们</string>
+    <string name="tuichuadsngsad">退出登录</string>
+    <string name="shezhiasdx">设置</string>
+    <string name="jiechupingi">解除屏蔽</string>
+    <string name="hbsadawe">屏蔽管理</string>
+    <string name="qinglihuancasd">确定清理缓存吗</string>
+    <string name="qingliasxzcsd">清理</string>
+    <string name="quxioasdcesf">取消</string>
+    <string name="bangzhuzhongxinasd">帮助中心</string>
+
+    <string name="yijianfanksadx">意见反馈</string>
+    <string name="gensuixit">跟随系统</string>
+    <string name="yuyanshehiase">语言设置</string>
+    <string name="bimingasdx">笔名</string>
+    <string name="xiugaiziliaodasdx">修改资料</string>
+    <string name="qingshuruasdasd">请输入</string>
+    <string name="xiugainicasd">修改昵称</string>
+    <string name="ibimingasd">笔名</string>
+    <string name="saduwbxh">图片（选填，提供问题截图）：</string>
+    <string name="bunengshendoubuf">不能什么都不发</string>
+    <string name="gandinawsd">"提交成功，感谢您的反馈"</string>
+    <string name="tijiasw">提交</string>
+    <string name="shoujihaosdawexd">请输入手机号</string>
+    <string name="yanzehndase">请填写验证码</string>
+    <string name="mimasidaesdd">请设置密码（不少于6位）</string>
+    <string name="zhucesahdiase">注册并登录</string>
+    <string name="tianxieshoujiasdawe">请填写手机号</string>
+    <string name="shoujihuzce">手机注册</string>
+    <string name="youxiangzhahudiase">邮箱找回密码</string>
+    <string name="tianxieyouxdase">填写邮箱</string>
+    <string name="querenssd">确认</string>
+    <string name="keuxnazhedase">最多选择4个作品标签</string>
+    <string name="dnegludasexx">登录</string>
+    <string name="chongzhibingdenglsad">重置并登录</string>
+    <string name="wangjimiamsdase">忘记密码</string>
+    <string name="quedingtuiachuasd">确定要退出登录吗？</string>
+    <string name="zanwuzhangjiedase">暂无章节</string>
+    <string name="mazirilidasease">码字日历</string>
+    <string name="zanwushujudasdxcsd">暂无数据</string>
+    <string name="zanwushujudasdase">暂无数据</string>
+    <string name="shojihaozhaodjawe">手机号找回</string>
+    <string name="youxiangdas">邮箱</string>
+    <string name="zhanghaodaseasd">账号</string>
+    <string name="diqudasdaadse">地区</string>
+    <string name="yoxuiangdaseasd">邮箱注册</string>
+    <string name="yanzmenhdhsaje">语音验证码</string>
+    <string name="mimadawesadse">密码</string>
+    <string name="fasonyanzmdase">发送验证码</string>
+    <string name="yanmzndiasdae">验证码</string>
+    <string name="jixinijiansdas">新建</string>
+    <string name="enzujiasndase">分卷</string>
+    <string name="chongxinshangdsa">重新上传</string>
+    <string name="shoujizhucsaas">手机注册</string>
+    <string name="gaofeigouzdjase">稿费构成</string>
+    <string name="gaofeiqingkdase">稿费情况</string>
+    <string name="leijigaofajsie">累计稿费</string>
+    <string name="zuixinjidasead">最近一次稿费</string>
+    <string name="gaofeiqindgaisd">稿费概况</string>
+    <string name="dingyueshouyisae">订阅收益</string>
+    <string name="dingyuexiandgsae">订阅详情</string>
+    <string name="zuoridingduisae">昨日订阅</string>
+    <string name="dzuosdhiashe">昨日订阅</string>
+    <string name="shangzjoutongdase">上周同一天</string>
+    <string name="zongdingyuesdase">总订阅</string>
+    <string name="dinbyuegaidase">订阅概况</string>
+    <string name="benyuedilidawe">本月礼物</string>
+    <string name="benyuedingdase">本月订阅</string>
+    <string name="dinyueshoudsjaie">订阅收益</string>
+    <string name="shoujichuzdase">手机注册</string>
+    <string name="kaishusdas">暂无公开书籍~</string>
+    <string name="zuiduozhinengxunasdas">最多只能选择四个标签</string>
+    <string name="chuangjianzuoasdae">创建作品</string>
+    <string name="rilizhidased">码字日历</string>
+    <string name="anwushubendasde">暂无书本消息～</string>
+</resources>

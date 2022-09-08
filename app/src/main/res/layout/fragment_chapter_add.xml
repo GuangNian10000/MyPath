@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.my.path.viewmodel.state.chapter.ChapterAddViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                android:id="@+id/include4"
+                app:title="@={viewmodel.title}"
+                layout="@layout/view_title_text_null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/cuncaogaosdsae"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView7"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:text="@string/fabukjdkasje"
+                android:textColor="@color/base_color"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/include4"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@={viewmodel.chapterContent.obName}"
+                    android:hint="@string/qingshurubiaodase"
+                    style="@style/baseEditText"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#333333"
+                    android:textColorHint="#333333"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tvVolume"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:drawableRight="@drawable/ic_xuanzejuansdaed"
+                    android:text="@={viewmodel.chapterContent.obVcName}"
+                    android:paddingBottom="11dp"
+                    android:textColor="#AAAAAA"/>
+<!--                app:setVolume="@{viewmodel.chapterContent}"-->
+
+                <com.my.path.app.util.ait.AitEditText
+                    android:id="@+id/editText"
+                    android:imeOptions="actionSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/baseEditText"
+                    app:addTextChangedListener="@{viewmodel.textWatcher}"
+                    android:text="@={viewmodel.chapterContent.obContent}"
+                    android:padding="18dp"
+                    android:textColorHighlight="#5088AAFF"
+                    android:textSize="14sp"
+                    android:textColor="#333333"
+                    android:background="@drawable/bg_wrinchaoersd"
+                    android:textColorHint="#AAAAAA"
+                    android:gravity="start"
+                    android:minHeight="492dp"
+                    android:hint="@string/qingshuruzhengwen" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.my.path.app.weight.textview.MediumBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="31dp"
+                        android:textColor="#333333"
+                        android:layout_marginBottom="21dp"
+                        android:textSize="20sp"
+                        android:text="@string/zuozheyouhudase"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/baseEditText"
+                        android:layout_marginBottom="20dp"
+                        android:text="@={viewmodel.chapterContent.obSay}"
+                        android:padding="18dp"
+                        android:textSize="14sp"
+                        android:textColor="#333333"
+                        android:background="@drawable/bg_wrinchaoersd"
+                        android:textColorHint="#AAAAAA"
+                        android:gravity="start"
+                        android:minHeight="67dp"
+                        android:hint="@string/buhuijichsaesadase" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
